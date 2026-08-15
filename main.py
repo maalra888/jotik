@@ -20,9 +20,9 @@ from telegram.ext import (
 )
 
 # ===================== КОНФИГ =====================
-BOT_TOKEN = "8523531820:AAHhrwX6U3sdhnSDkA3hvlIqIKYG0ltAYIo"
-ADMIN_ID = 8847450363
-FUNPAY_LINK = "https://funpay.com/lots/offer?id=75088997"
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8523531820:AAHhrwX6U3sdhnSDkA3hvlIqIKYG0ltAYIo")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "8847450363"))
+FUNPAY_LINK = os.getenv("FUNPAY_LINK", "https://funpay.com/lots/offer?id=75088997")
 
 # ===================== ФАЙЛЫ =====================
 USERS_FILE = "users.json"
